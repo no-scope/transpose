@@ -16,7 +16,6 @@ move :: Int -> String -> String
 move i s = sharpKeys !! ((j + i) `mod` 12)
   where Just j = elemIndex s sharpKeys
 
-
 nextChord :: String -> Maybe String
 nextChord s = find (\x -> x `isPrefixOf` s) parseKeys
 
